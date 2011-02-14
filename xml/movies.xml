@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fossplayer>
+	<configs>
+		<firstMovieIsOneTime>1</firstMovieIsOneTime> <!-- If the first movie is only to be played on first time visitor enters page -->
+		<autoPlayOnlyIfFirstMovie>1</autoPlayOnlyIfFirstMovie> <!-- Autoplay setting is only in effect for the first movie if first movie is only to be played one time -->
+		<autoPlay>1</autoPlay> <!-- Should the first movie autoplay when visitor enters the page -->
+		<nextMovieText>Loading movie...</nextMovieText>
+		<movieDirectory>../video/</movieDirectory><!--relative to xml file-->
+		<imageDirectory>../video/</imageDirectory><!--relative to html file-->
+	</configs>
+	<movies>
+		<movie cat="1">
+			<title>Intro</title>
+			<desc>OenoFoss</desc>
+			<file>video.flv</file>
+			<image>teaser.gif</image>
+		</movie>
+		<movie cat="2">
+			<title>Intro</title>
+			<desc>OenoFoss</desc>
+			<file>video.flv</file>
+			<image>teaser.gif</image>
+		</movie>
+		<movie cat="3">
+			<title>Intro</title>
+			<desc>OenoFoss</desc>
+			<file>video.flv</file>
+			<image>teaser.gif</image>
+		</movie>
+		
+	</movies>
+</fossplayer>

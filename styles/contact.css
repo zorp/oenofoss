@@ -1,0 +1,67 @@
+.error-message {
+	display:none;
+}
+
+
+#midWrapper {
+	height: 60px;
+}
+.botContent {
+	display:block;
+}
+
+
+#contactContainer {}
+	#contactLeft {
+		float:left;
+		width: 450px;
+	}
+		
+		#contactLeft ul {
+			list-style:none;
+		}
+		#contactLeft li {}
+		#contactLeft label {
+			color: #003362;
+			font-size: 12px;
+			font-weight:bold;
+		}
+		#contactLeft input {
+			margin-right: 2px;
+		}
+	
+	#contactRight {
+		float:left;
+		width: 420px;
+		border-left: 3px dotted #ccc;
+		margin-left: 20px;
+		padding-left: 20px;
+	}
+		#contactRight label {
+			width: 150px;
+			font-size: 14px;
+			font-weight: bold;
+			color: #555;
+			display:block;
+		}
+		#contactRight input {
+			font-size: 14px;
+			width: 200px;
+		}
+		#contactRight select {
+			width: 100%;
+		}
+
+#contactContainer h1 {
+	font-weight:bold;
+	font-size: 16px;
+	color: #003362;
+	margin-bottom: 10px;
+}
+
+#contactContainer h2 {
+	font-weight:bold;
+	font-size: 14px;
+	color: #555;
+	margin-bottom: 15px;
+}

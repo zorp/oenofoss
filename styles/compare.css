@@ -1,0 +1,119 @@
+
+#productsMenu li {
+	cursor: default;
+	text-align:center;
+}
+
+#botWrapper {}
+	#botWrapper .wrapper {
+		width: 950px;
+	}
+	
+	#botWrapper .compareTable {
+		width: 950px;
+	}
+	
+	.compareTable tr {
+		height: 38px;
+	}
+	
+	.compareTable small {
+		font-size: 10px;
+	}
+	
+	.compareTable .tree td {
+		width: 33%;
+	}
+	
+	.compareTable .two td {
+		width: 50%;
+	}
+	
+	.compareTable td.break {
+		width: 10px;
+	}
+	
+		.compareTable .parameters {
+			text-align:right !important;
+			color: #fff;
+			width: 89px;
+		}
+			.compareTable .parameters td {
+				border-top: 2px solid #859aad;
+				font-size: 12px;
+				padding-right: 5px;
+			}
+		
+		.compareTable .compare_wineScan td,
+		.compareTable .compare_wineScanBasic td, 
+		.compareTable .compare_oenofoss td, 
+		.compareTable .compare_fiastar td {
+			text-align:center;
+			background-color: #8499ac;
+			color: #003362;
+		}
+		
+			.compareTable .compare_wineScan,
+			.compareTable .compare_wineScanBasic, 
+			.compareTable .compare_oenofoss, 
+			.compareTable .compare_fiastar {
+				width: 210px;
+			}
+			
+			.compareTable .compare_wineScan td,
+			.compareTable .compare_wineScanBasic td, 
+			.compareTable .compare_oenofoss td, 
+			.compareTable .compare_fiastar td {
+				border-bottom: 2px solid #214b72;
+				font-size: 15px;
+			}
+
+#botWrapper .wrapper {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#compareProductMenu {
+	margin-top: -60px;
+	height: 180px;
+}
+	#compareProductMenu td {}
+
+.compareImage {
+	display:block;
+}
+
+.compareTitle {
+	position:absolute;
+	width: 217px;
+	text-align:center;
+}
+
+.compareArrow {
+	position:absolute;
+	width: 217px;
+}
+	.compareArrow .innerArrow {
+		float:left;
+		margin-right: 1px;
+	}
+		.compareArrow .innerArrow div {
+			position:absolute;
+			font-size: 14px;
+			color: #97a4b3;
+			bottom: 20px;
+			text-align:center;
+		}
+		
+		
+		#compare_wineScan .innerArrow div, 
+		#compare_oenofoss .innerArrow div {
+			width: 73px;
+		}
+		
+		#compare_fiastar .innerArrow div, 
+		#compare_wineScanBasic .innerArrow div {
+			width: 108px;
+		}
+		
+		

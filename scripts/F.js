@@ -1,0 +1,1 @@
+var F = Class.create({},true);

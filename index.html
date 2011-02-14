@@ -1,0 +1,2186 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Oenofoss</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<link rel="stylesheet" href="styles/default.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="theme/ui.all.css" type="text/css" media="screen" charset="utf-8" />
+		
+		<!--[if IE 6]>
+			<script src="scripts/pngfix.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript" charset="utf-8">
+				DD_belatedPNG.fix('.arrow, .arrowBack, .pngfix');
+			</script>
+		<![endif]-->
+		
+		<script src="scripts/loader.php?f=jquery|jquery.libraries|jquery.ui.tabs" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/loader.php?f=F|F.Pip|F.Pip.Data|F.Pip.Foss|F.Pip.Generic|F.Meta|F.Meta.User|F.Page" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="scripts/loader.php?f=Global" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<!-- FLASH VIDEO -->
+		<script src="scripts/swfobject.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			jQuery(document).ready(function($) {
+				var pip = new F.Pip();
+				pip.loadData();
+				
+				
+				var flashvars = {
+					file: '../video/video.flv',
+					skin: 'flash/foss_skin.swf',
+					fullscreen: true,
+					autostart: true,
+					bufferlength: 20
+				};
+				var params = {
+					menu: "false"
+				};
+				var attributes = {
+					wmode: 'transparent'
+				};
+				
+				// FRONTPAGE
+				swfobject.embedSWF("flash/frontpage.swf", "frontpagePlayer", "431", "267", "9.0.0","flash/expressInstall.swf", flashvars, params, attributes);
+				
+				// WINESCAN
+				var wineVars = {
+					xmlFileAtt:'xml/movies.xml',
+					movieDirectoryAtt:'/video/'
+				};
+				swfobject.embedSWF("flash/productPlayer.swf", "wineScanPlayer", "740", "265", "9.0.0","flash/expressInstall.swf", wineVars, params, attributes);
+				
+				// WINESCAN BASIC
+				var wineBasicVars = {};
+				swfobject.embedSWF("flash/productPlayer.swf", "wineScanBasicPlayer", "740", "265", "9.0.0","flash/expressInstall.swf", wineBasicVars, params, attributes);
+				
+				// OENOFOSS
+				var oenofossVars = {};
+				swfobject.embedSWF("flash/productPlayer.swf", "oenofossPlayer", "740", "265", "9.0.0","flash/expressInstall.swf", oenofossVars, params, attributes);
+				
+			});
+		</script>
+		
+	</head>
+	<body>
+		
+		<div id="page" align="center">
+			
+			<div id="topWrapper">
+				<div class="topWrapper">
+					<div id="headerLogo">
+						<a href="/oenofoss"><img src="images/fossLogo.gif" /></a>
+					</div>
+					
+					<ul id="headerMenu">
+						<li>
+							<a href="compare.html">
+								<h3>Compare</h3>
+								<small>our solutions</small>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">
+								<h3>Calculate</h3>
+								<small>value of ownership</small>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<h3>Contact us</h3>
+								<small>for more information</small>
+							</a>
+						</li>
+						<li>
+							<a href="http://www.foss.dk">
+								<h3>About us</h3>
+								<small>Visit our corporate site</small>
+							</a>
+						</li>
+						<li class="language">
+							<h3>Language</h3>
+							<div id="flags">
+								<a href="?lang=uk" title="England"><img src="images/flag_uk.gif" /></a>
+								<a href="?lang=us" title="USA"><img src="images/flag_us.gif" /></a>
+								<a href="?lang=au" title="Australia"><img src="images/flag_au.gif" /></a>
+								<a href="?lang=es" title="Spain"><img src="images/flag_es.gif" /></a>
+								<a href="?lang=it" title="Spain"><img src="images/flag_it.gif" /></a>
+								<a href="?lang=fr" title="France"><img src="images/flag_fr.gif" /></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="midWrapper">
+				
+				<div class="textWrapper wrapper" style="display:none"></div>
+				
+				<div class="wrapper">
+					
+					<ul class="rowBlocks">
+						<li class="block_1 pngfix">
+							<div class="block_1_wrapper">
+								<h1>Knowledge</h1>
+								<h2>-one investment	that always pays.</h2>
+								<div class="breaker"></div>
+								<p>Discover the cost savings possible with rapid wine analysis and find the right solution for your business.</p>
+							</div>
+						</li>
+						<li class="block_2 pngfix">
+							<div id="frontpagePlayer"> I AM TEH FLASHPLAYER </div>
+						</li>
+						<li class="block_3 pngfix last">
+							<div class="block_3_wrapper">
+								<h1>What´s your return on investment?<br />Find out right now.</h1>
+								<div class="breaker"></div>
+								<p>Let us calculate your annual profit savings:</p>
+								<table width="100%">
+									<tr>
+										<td width="180">Your yearly production volume?</td>
+										<td width="20">&nbsp;</td>
+										<td>Samples?</td>
+									</tr>
+									<tr>
+										<td>
+											<select id="productionVolumePrYear" name="production_volume_pr_year">
+												<option value="">Click to select</option>
+												<option value="oenofoss">Less than 10.000</option>
+												<option value="wineScanBasic">Between 10-15.000</option>
+												<option value="wineScan">More than 15.000</option>
+											</select>
+										</td>
+										<td>&nbsp;</td>
+										<td>
+											<input id="samplesPrDay_pre" name="samples_pr_day" value="30" />
+										</td>
+									</tr>
+									<tr>
+										<td align="right"><label id="production_volume_pr_year" for="production_volume_pr_year">HL. PER YEAR</label></td>
+										<td>&nbsp;</td>
+										<td align="left"><label id="samples_pr_day" for="samples_pr_day">PER DAY</label></td>
+									</tr>
+								</table>
+								
+								<div class="arrow">
+									<div><a href="#" id="calculateYourProfit">Calculate your profit savings</a></div>
+								</div>
+								
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			<div id="botWrapper">
+				<div class="wrapper">
+					<ul id="productsMenu">
+						<li class="wineScan">
+							<a href="#wineScan">
+								<div>
+									<img class="pngfix" src="images/product1.png" />
+									<img class="productTitle pngfix" src="images/text_wineScan.png" />
+									<img class="productTitleActive pngfix" src="images/text_wineScan_active.png" />
+								</div>
+								<p>Demanding fast, accurate, high throughput analysis of multiple and sophisticated parameters</p>
+							</a>
+						</li>
+						<li class="wineScanBasic">
+							<a href="#wineScanBasic">
+								<div>
+									<img class="pngfix" src="images/product2.png" />
+									<img class="productTitle pngfix" src="images/text_wineScanBasic.png" />
+									<img class="productTitleActive pngfix" src="images/text_wineScanBasic_active.png" />
+								</div>
+								<p>Reliable and robust workhorse satisfying most analytical needs</p>	
+							</a>
+						</li>
+						<li class="oenofoss">
+							<a href="#oenofoss">
+								<div>
+									<img class="pngfix" src="images/product3.png" />
+									<img class="productTitle pngfix" src="images/text_oenoFoss.png" />
+									<img class="productTitleActive pngfix" src="images/text_oenoFoss_active.png" />
+								</div>
+								<p>Fast, easy and economical alternative to traditional methods or external analysis covering most routine quality parameters</p>	
+							</a>
+						</li>
+						<li class="fiastar last">
+							<a href="#fiastar">
+								<div>
+									<img class="pngfix" src="images/product4.png" />
+									<img class="productTitle pngfix" src="images/text_fiaStar.png" />
+									<img class="productTitleActive pngfix" src="images/text_fiaStar_active.png" />
+								</div>
+								<p>State-of-the-art SO<sub>2</sub> analysis</p>	
+							</a>
+						</li>
+					</ul>
+					
+					<div class="botContent">
+						<div class="botTopWrapper pngfix"></div>
+						<div class="botMidWrapper pngfix">
+							
+							
+							<div id="pipContainer">
+								<div id="pipCalculator">
+									<h3>Savings Calculator:</h3>
+									<p>Adjust the numbers in bold to fit your business and recalculate your savings:</p>
+									<br /><br />
+									<table>
+								
+										<tr>
+											<td width="240">&nbsp;</td>
+											<td width="100">Current solution</td>
+											<td width="110" align="right" class="productName"></td>
+											<td>&nbsp;</td>
+										</tr>
+								
+										<tr>
+											<td><label>Samples pr. day</label></td>
+											<td><input name="samplesPrDay" id="samplesPrDay" value="0" /></td>
+											<td><input class="disabled" name="samplesPrDay_Foss" id="samplesPrDay_Foss" value="0" /></td>
+											<td></td>
+										</tr>
+								
+										<tr>
+											<td><label>Testing days pr. year</label></td>
+											<td><input name="testingDaysPrYear" id="testingDaysPrYear" value="0" /></td>
+											<td><input class="disabled" name="testingDaysPrYear_Foss" id="testingDaysPrYear_Foss" value="0" /></td>
+											<td></td>
+										</tr>
+								
+										<tr>
+											<td><label>Total samples pr. year</label></td>
+											<td><input class="result disabled" name="totalSamplesPrYear" id="totalSamplesPrYear" value="0" /></td>
+											<td><input class="result disabled" name="totalSamplesPrYear_Foss" id="totalSamplesPrYear_Foss" value="0" /></td>
+											<td></td>
+										</tr>
+								
+										<tr><td colspan="4">&nbsp;</td></tr>
+								
+										<tr>
+											<td><label>Total material cost pr. in-house sample (reagents & consumables)</label></td>
+											<td><input name="totalMaterialCost" id="totalMaterialCost" value="0" /></td>
+											<td><input class="disabled" name="totalMaterialCost_Foss" id="totalMaterialCost_Foss" value="0" /></td>
+											<td class="currency">Euro</td>
+										</tr>
+								
+										<tr>
+											<td><label>Cost of wine used pr. sample</label></td>
+											<td><input name="wineSampleCost" id="wineSampleCost" value="0" /></td>
+											<td><input class="disabled" name="wineSampleCost_Foss" id="wineSampleCost_Foss" value="0" /></td>
+											<td class="currency">Euro</td>
+										</tr>
+								
+										<tr>
+											<td><label>Estimated total annual cost (excluding labour)</label></td>
+											<td><input class="result disabled" name="totalAnnualCost" id="totalAnnualCost" value="0" /></td>
+											<td><input class="result disabled" name="totalAnnualCost_Foss" id="totalAnnualCost_Foss" value="0" /></td>
+											<td class="currency">Euro</td>
+										</tr>
+								
+										<tr><td colspan="4">&nbsp;</td></tr>
+								
+										<tr>
+											<td><label>Estimated time spent on each sample analysis</label></td>
+											<td><input name="timeSpend" id="timeSpend" value="0" /></td>
+											<td><input class="disabled" name="timeSpend_Foss" id="timeSpend_Foss" value="0" /></td>
+											<td>Min</td>
+										</tr>
+								
+										<tr>
+											<td><label>Hourly operator wage</label></td>
+											<td><input name="hourWage" id="hourWage" value="0" /></td>
+											<td><input class="disabled" name="hourWage_Foss" id="hourWage_Foss" value="0" /></td>
+											<td class="currency">Euro</td>
+										</tr>
+								
+										<tr>
+											<td><label>Annual cost of labour (time)</label></td>
+											<td><input class="result disabled" name="totalLabourCost" id="totalLabourCost" value="0" /></td>
+											<td><input class="result disabled" name="totalLabourCost_Foss" id="totalLabourCost_Foss" value="0" /></td>
+											<td class="currency">Euro</td>
+										</tr>
+								
+										<tr><td colspan="4">&nbsp;</td></tr>
+								
+										<tr>
+											<td><label>Total cost of analysis pr. yr.</label></td>
+											<td><input class="result disabled" name="totalAnalysisCost" id="totalAnalysisCost" value="0" /></td>
+											<td><input class="result disabled" name="totalAnalysisCost_Foss" id="totalAnalysisCost_Foss" value="0" /></td>
+											<td class="currency">Euro</td>
+										</tr>
+								
+								
+									</table>
+							
+								</div>
+							
+								<div id="pipResult">
+									<h3>Your annual savings on cost of analysis will be:</h3>
+									<input class="disabled result" name="annualCostSavings" id="annualCostSavings" value="0" />
+									<div id="pipResultPayback">
+										<div>Estimated payback time:</div>
+										<input name="paybackTime" id="paybackTime" value="0" />
+									</div>
+									<br /><br />
+									<div class="arrow">
+										<div><a class="showProduct" href="#">Show me the <span class="productName"></span></a></div>
+									</div>
+									<br /><br />
+									<small>
+										<em>* Please note that the calculations are estimated based on your input and market assumptions giving an indication of value of ownership</em>
+									</small>
+									
+								</div>
+								
+							</div>
+							
+							
+							<div id="pipFiastar">
+								Since the value of ownership calculation for the FIAstar requires more detailed customer insight and explanation, please consult your local FOSS representative and get a customized profit improvement calculation that fits your business.
+							</div>
+							
+							
+							<div id="prodContainer">
+<!-- #WINESCAN ======================================================================== -->
+								<div id="prod_wineScan">
+									<table width="100%">
+										<tr>
+											<td valign="top" style="width: 200px; padding-right: 30px">
+												<h3>Suitable for:</h3>
+												<p>Typically large producers and laboratories (>15,000 HL / 200,000 cases)</p>
+												<p>Demanding fast, accurate, high throughput analysis of multiple and sophisticated parameters.</p>
+												<p>Typical testing volume: >50 samples/day</p>
+												
+												<h3>WineScan™ Flex</h3>
+												<p>Highly flexible, manual solution for fast and accurate analysis in all stages of wine production.</p>
+												
+												<h3>WineScan™ Auto</h3>
+												<p>Automated, high capacity routine analysis in all stages of wine prdocution.</p>
+												
+												<h3>WineScan™ Grape</h3>
+												<p>Filtration and grape quality analysis at reception/weighbridge</p>
+												
+												<h3>Downloads:</h3>
+												<ul class="files">
+													<li><a href="file1.pdf">file 1.pdf</a></li>
+													<li><a href="file1.pdf">file 2.pdf</a></li>
+													<li><a href="file1.pdf">file 3.pdf</a></li>
+												</ul>
+												
+											</td>
+											<td valign="top">
+												<h2>How does it work and what do the customer say?</h2>
+												<div class="winePlayer">
+													<div id="wineScanPlayer"></div>
+												</div>
+												<table width="100%" cellpadding="0" cellspacing="0">
+													<tr valign="top">
+														<td style="width: 470px; padding-right: 20px">
+															<table class="productTable" border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<th class="empty">&nbsp;</th>
+																	<th valign="top">WineScan™<br />Flex</th>
+																	<th valign="top">WineScan™<br />Auto</th>
+																	<th valign="top">WineScan™<br />Grape</th>
+																</tr>
+																<tr class="first">
+																	<td class="param"><small>Number of parameters:</small><br />Must</td>
+																	<td>31</td>
+																	<td>31</td>
+																	<td>31</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />MUF</td>
+																	<td>9</td>
+																	<td>9</td>
+																	<td>9</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />FW</td>
+																	<td>36</td>
+																	<td>36</td>
+																	<td>35</td>
+																</tr>
+																<tr>
+																	<td class="param">Analysis Time<br /><small>(seconds)</small></td>
+																	<td>30</td>
+																	<td>30</td>
+																	<td>90</td>
+																</tr>
+																<tr>
+																	<td class="param">Capacity<br /><small>(samples/hour)</small></td>
+																	<td>50</td>
+																	<td>120</td>
+																	<td>20<br /><small>(incl. filtration)</small></td>
+																</tr>
+																<tr>
+																	<td class="param">Operator type</td>
+																	<td class="small" colspan="3">Lab skills required</td>
+																</tr>
+																<tr>
+																	<td class="param">Automation</td>
+																	<td>-</td>
+																	<td>Yes</td>
+																	<td>-</td>
+																</tr>
+																<tr>
+																	<td class="param">Calibration concept</td>
+																	<td class="small" colspan="3">Open (S/I + WinISI)</td>
+																</tr>
+																<tr>
+																	<td class="param">Optional colour module</td>
+																	<td>Yes</td>
+																	<td>Yes</td>
+																	<td>No</td>
+																</tr>
+																<tr class="last">
+																	<td class="param">Typical payback time</td>
+																	<td class="small" colspan="3">2-3 years</td>
+																</tr>
+															</table>
+															
+															<h2>What parameters can it analyse?</h2>
+															
+															<div class="tabs">
+																<ul>
+																	<li><a href="#tab1">Grape Must</a></li>
+																	<li><a href="#tab2">Must Under Fermentation</a></li>
+																	<li><a href="#tab3">Finished Wine</a></li>
+																</ul>
+																<div id="tab1">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																		</tr>
+																		<tr valign="top" style="background-color: #eee">
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab2">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Glucose+Fructose *<br />
+																				Malic acid *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Total acidity *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab3">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Dry Finished Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Citric *<br />
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Ethyl acetate *<br />
+																				Fructose *<br />
+																				Gluconic *<br />
+																				Glucose *<br />
+																				Glucose+Fructose *<br />
+																				Glycerol *<br />
+																				Lactic acid *<br />
+																				Malic acid *<br />
+																				Methanol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sorbic acid *<br />
+																				Tartaric acid *<br />
+																				Total acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Sweet Finished Wine:</td>
+																		</tr>
+																		<tr style="background-color: #eee" valign="top">
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Port Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Ash *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Fixed acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Glycerol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sulphates *<br />
+																				Total acidty *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+															
+														</td>
+														<td>
+															<a class="arrowBack" href="#">
+																<div class="arrowBackInner">
+																	Calculate savings
+																</div>
+															</a>
+															
+															<br />
+															
+															<a href="contact.html?book=1" class="bookDemo">
+																<div class="bookDemoInner">
+																	Book a demo now and get a free case story collection!
+																</div>
+															</a>
+															
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+<!-- #WINESCANBASIC =================================================================== -->
+								<div id="prod_wineScanBasic">
+									<table width="100%">
+										<tr>
+											<td valign="top" style="width: 200px; padding-right: 30px">
+												<h3>Suitable for:</h3>
+												<p>Typically large producers and laboratories (>15,000 HL / 200,000 cases)</p>
+												<p>Demanding fast, accurate, high throughput analysis of multiple and sophisticated parameters.</p>
+												<p>Typical testing volume: >50 samples/day</p>
+												
+												<h3>WineScan™ Flex</h3>
+												<p>Highly flexible, manual solution for fast and accurate analysis in all stages of wine production.</p>
+												
+												<h3>WineScan™ Auto</h3>
+												<p>Automated, high capacity routine analysis in all stages of wine prdocution.</p>
+												
+												<h3>WineScan™ Grape</h3>
+												<p>Filtration and grape quality analysis at reception/weighbridge</p>
+												
+												<h3>Downloads:</h3>
+												<ul class="files">
+													<li><a href="file1.pdf">file 1.pdf</a></li>
+													<li><a href="file1.pdf">file 2.pdf</a></li>
+													<li><a href="file1.pdf">file 3.pdf</a></li>
+												</ul>
+												
+											</td>
+											<td valign="top">
+												<h2>How does it work and what do the customer say?</h2>
+												<div class="winePlayer">
+													<div id="wineScanBasicPlayer"></div>
+												</div>
+												<table width="100%" cellpadding="0" cellspacing="0">
+													<tr valign="top">
+														<td style="width: 470px; padding-right: 20px">
+															<table class="productTable" border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<th class="empty">&nbsp;</th>
+																	<th valign="top">WineScan™<br />Flex</th>
+																	<th valign="top">WineScan™<br />Auto</th>
+																	<th valign="top">WineScan™<br />Grape</th>
+																</tr>
+																<tr class="first">
+																	<td class="param"><small>Number of parameters:</small><br />Must</td>
+																	<td>31</td>
+																	<td>31</td>
+																	<td>31</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />MUF</td>
+																	<td>9</td>
+																	<td>9</td>
+																	<td>9</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />FW</td>
+																	<td>36</td>
+																	<td>36</td>
+																	<td>35</td>
+																</tr>
+																<tr>
+																	<td class="param">Analysis Time<br /><small>(seconds)</small></td>
+																	<td>30</td>
+																	<td>30</td>
+																	<td>90</td>
+																</tr>
+																<tr>
+																	<td class="param">Capacity<br /><small>(samples/hour)</small></td>
+																	<td>50</td>
+																	<td>120</td>
+																	<td>20<br /><small>(incl. filtration)</small></td>
+																</tr>
+																<tr>
+																	<td class="param">Operator type</td>
+																	<td class="small" colspan="3">Lab skills required</td>
+																</tr>
+																<tr>
+																	<td class="param">Automation</td>
+																	<td>-</td>
+																	<td>Yes</td>
+																	<td>-</td>
+																</tr>
+																<tr>
+																	<td class="param">Calibration concept</td>
+																	<td class="small" colspan="3">Open (S/I + WinISI)</td>
+																</tr>
+																<tr>
+																	<td class="param">Optional colour module</td>
+																	<td>Yes</td>
+																	<td>Yes</td>
+																	<td>No</td>
+																</tr>
+																<tr class="last">
+																	<td class="param">Typical payback time</td>
+																	<td class="small" colspan="3">2-3 years</td>
+																</tr>
+															</table>
+															
+															<h2>What parameters can it analyse?</h2>
+															
+															<div class="tabs">
+																<ul>
+																	<li><a href="#tab1">Grape Must</a></li>
+																	<li><a href="#tab2">Must Under Fermentation</a></li>
+																	<li><a href="#tab3">Finished Wine</a></li>
+																</ul>
+																<div id="tab1">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																		</tr>
+																		<tr valign="top" style="background-color: #eee">
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab2">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Glucose+Fructose *<br />
+																				Malic acid *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Total acidity *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab3">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Dry Finished Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Citric *<br />
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Ethyl acetate *<br />
+																				Fructose *<br />
+																				Gluconic *<br />
+																				Glucose *<br />
+																				Glucose+Fructose *<br />
+																				Glycerol *<br />
+																				Lactic acid *<br />
+																				Malic acid *<br />
+																				Methanol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sorbic acid *<br />
+																				Tartaric acid *<br />
+																				Total acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Sweet Finished Wine:</td>
+																		</tr>
+																		<tr style="background-color: #eee" valign="top">
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Port Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Ash *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Fixed acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Glycerol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sulphates *<br />
+																				Total acidty *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+															
+														</td>
+														<td>
+															<a class="arrowBack" href="#">
+																<div class="arrowBackInner">
+																	Calculate savings
+																</div>
+															</a>
+															
+															<br />
+															
+															<a href="contact.html?book=1" class="bookDemo">
+																<div class="bookDemoInner">
+																	Book a demo now and get a free case story collection!
+																</div>
+															</a>
+															
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+<!-- #OENOFOSS ======================================================================== -->
+								<div id="prod_oenofoss">
+									<table width="100%">
+										<tr>
+											<td valign="top" style="width: 200px; padding-right: 30px">
+												<h3>Suitable for:</h3>
+												<p>Typically large producers and laboratories (>15,000 HL / 200,000 cases)</p>
+												<p>Demanding fast, accurate, high throughput analysis of multiple and sophisticated parameters.</p>
+												<p>Typical testing volume: >50 samples/day</p>
+												
+												<h3>WineScan™ Flex</h3>
+												<p>Highly flexible, manual solution for fast and accurate analysis in all stages of wine production.</p>
+												
+												<h3>WineScan™ Auto</h3>
+												<p>Automated, high capacity routine analysis in all stages of wine prdocution.</p>
+												
+												<h3>WineScan™ Grape</h3>
+												<p>Filtration and grape quality analysis at reception/weighbridge</p>
+												
+												<h3>Downloads:</h3>
+												<ul class="files">
+													<li><a href="file1.pdf">file 1.pdf</a></li>
+													<li><a href="file1.pdf">file 2.pdf</a></li>
+													<li><a href="file1.pdf">file 3.pdf</a></li>
+												</ul>
+												
+											</td>
+											<td valign="top">
+												<h2>How does it work and what do the customer say?</h2>
+												<div class="winePlayer">
+													<div id="oenofossPlayer"></div>
+												</div>
+												<table width="100%" cellpadding="0" cellspacing="0">
+													<tr valign="top">
+														<td style="width: 470px; padding-right: 20px">
+															<table class="productTable" border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<th class="empty">&nbsp;</th>
+																	<th valign="top">WineScan™<br />Flex</th>
+																	<th valign="top">WineScan™<br />Auto</th>
+																	<th valign="top">WineScan™<br />Grape</th>
+																</tr>
+																<tr class="first">
+																	<td class="param"><small>Number of parameters:</small><br />Must</td>
+																	<td>31</td>
+																	<td>31</td>
+																	<td>31</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />MUF</td>
+																	<td>9</td>
+																	<td>9</td>
+																	<td>9</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />FW</td>
+																	<td>36</td>
+																	<td>36</td>
+																	<td>35</td>
+																</tr>
+																<tr>
+																	<td class="param">Analysis Time<br /><small>(seconds)</small></td>
+																	<td>30</td>
+																	<td>30</td>
+																	<td>90</td>
+																</tr>
+																<tr>
+																	<td class="param">Capacity<br /><small>(samples/hour)</small></td>
+																	<td>50</td>
+																	<td>120</td>
+																	<td>20<br /><small>(incl. filtration)</small></td>
+																</tr>
+																<tr>
+																	<td class="param">Operator type</td>
+																	<td class="small" colspan="3">Lab skills required</td>
+																</tr>
+																<tr>
+																	<td class="param">Automation</td>
+																	<td>-</td>
+																	<td>Yes</td>
+																	<td>-</td>
+																</tr>
+																<tr>
+																	<td class="param">Calibration concept</td>
+																	<td class="small" colspan="3">Open (S/I + WinISI)</td>
+																</tr>
+																<tr>
+																	<td class="param">Optional colour module</td>
+																	<td>Yes</td>
+																	<td>Yes</td>
+																	<td>No</td>
+																</tr>
+																<tr class="last">
+																	<td class="param">Typical payback time</td>
+																	<td class="small" colspan="3">2-3 years</td>
+																</tr>
+															</table>
+															
+															<h2>What parameters can it analyse?</h2>
+															
+															<div class="tabs">
+																<ul>
+																	<li><a href="#tab1">Grape Must</a></li>
+																	<li><a href="#tab2">Must Under Fermentation</a></li>
+																	<li><a href="#tab3">Finished Wine</a></li>
+																</ul>
+																<div id="tab1">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																		</tr>
+																		<tr valign="top" style="background-color: #eee">
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab2">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Glucose+Fructose *<br />
+																				Malic acid *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Total acidity *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab3">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Dry Finished Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Citric *<br />
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Ethyl acetate *<br />
+																				Fructose *<br />
+																				Gluconic *<br />
+																				Glucose *<br />
+																				Glucose+Fructose *<br />
+																				Glycerol *<br />
+																				Lactic acid *<br />
+																				Malic acid *<br />
+																				Methanol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sorbic acid *<br />
+																				Tartaric acid *<br />
+																				Total acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Sweet Finished Wine:</td>
+																		</tr>
+																		<tr style="background-color: #eee" valign="top">
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Port Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Ash *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Fixed acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Glycerol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sulphates *<br />
+																				Total acidty *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+															
+														</td>
+														<td>
+															<a class="arrowBack" href="#">
+																<div class="arrowBackInner">
+																	Calculate savings
+																</div>
+															</a>
+															
+															<br />
+															
+															<a href="contact.html?book=1" class="bookDemo">
+																<div class="bookDemoInner">
+																	Book a demo now and get a free case story collection!
+																</div>
+															</a>
+															
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+<!-- #FIASTAR ========================================================================= -->
+								<div id="prod_fiastar">
+									<table width="100%">
+										<tr>
+											<td valign="top" style="width: 200px; padding-right: 30px">
+												<h3>Suitable for:</h3>
+												<p>Typically large producers and laboratories (>15,000 HL / 200,000 cases)</p>
+												<p>Demanding fast, accurate, high throughput analysis of multiple and sophisticated parameters.</p>
+												<p>Typical testing volume: >50 samples/day</p>
+												
+												<h3>WineScan™ Flex</h3>
+												<p>Highly flexible, manual solution for fast and accurate analysis in all stages of wine production.</p>
+												
+												<h3>WineScan™ Auto</h3>
+												<p>Automated, high capacity routine analysis in all stages of wine prdocution.</p>
+												
+												<h3>WineScan™ Grape</h3>
+												<p>Filtration and grape quality analysis at reception/weighbridge</p>
+												
+												<h3>Downloads:</h3>
+												<ul class="files">
+													<li><a href="file1.pdf">file 1.pdf</a></li>
+													<li><a href="file1.pdf">file 2.pdf</a></li>
+													<li><a href="file1.pdf">file 3.pdf</a></li>
+												</ul>
+												
+											</td>
+											<td valign="top">
+												<h2>How does it work and what do the customer say?</h2>
+												<table width="100%" cellpadding="0" cellspacing="0">
+													<tr valign="top">
+														<td style="width: 470px; padding-right: 20px">
+															<table class="productTable" border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<th class="empty">&nbsp;</th>
+																	<th valign="top">WineScan™<br />Flex</th>
+																	<th valign="top">WineScan™<br />Auto</th>
+																	<th valign="top">WineScan™<br />Grape</th>
+																</tr>
+																<tr class="first">
+																	<td class="param"><small>Number of parameters:</small><br />Must</td>
+																	<td>31</td>
+																	<td>31</td>
+																	<td>31</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />MUF</td>
+																	<td>9</td>
+																	<td>9</td>
+																	<td>9</td>
+																</tr>
+																<tr>
+																	<td class="param"><small>Number of parameters:</small><br />FW</td>
+																	<td>36</td>
+																	<td>36</td>
+																	<td>35</td>
+																</tr>
+																<tr>
+																	<td class="param">Analysis Time<br /><small>(seconds)</small></td>
+																	<td>30</td>
+																	<td>30</td>
+																	<td>90</td>
+																</tr>
+																<tr>
+																	<td class="param">Capacity<br /><small>(samples/hour)</small></td>
+																	<td>50</td>
+																	<td>120</td>
+																	<td>20<br /><small>(incl. filtration)</small></td>
+																</tr>
+																<tr>
+																	<td class="param">Operator type</td>
+																	<td class="small" colspan="3">Lab skills required</td>
+																</tr>
+																<tr>
+																	<td class="param">Automation</td>
+																	<td>-</td>
+																	<td>Yes</td>
+																	<td>-</td>
+																</tr>
+																<tr>
+																	<td class="param">Calibration concept</td>
+																	<td class="small" colspan="3">Open (S/I + WinISI)</td>
+																</tr>
+																<tr>
+																	<td class="param">Optional colour module</td>
+																	<td>Yes</td>
+																	<td>Yes</td>
+																	<td>No</td>
+																</tr>
+																<tr class="last">
+																	<td class="param">Typical payback time</td>
+																	<td class="small" colspan="3">2-3 years</td>
+																</tr>
+															</table>
+															
+															<h2>What parameters can it analyse?</h2>
+															
+															<div class="tabs">
+																<ul>
+																	<li><a href="#tab1">Grape Must</a></li>
+																	<li><a href="#tab2">Must Under Fermentation</a></li>
+																	<li><a href="#tab3">Finished Wine</a></li>
+																</ul>
+																<div id="tab1">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																			<td>
+																				Brix<br />
+																				Density<br />
+																				Malic acid<br />
+																				pH<br />
+																				Tartaric acid<br />
+																				Total acidity
+																			</td>
+																		</tr>
+																		<tr valign="top" style="background-color: #eee">
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Acid rot<br />
+																				Ethanol<br />
+																				Fermentative activity<br />
+																				Gluconic acid<br />
+																				Glycerol<br />
+																				Grey rot<br />
+																				Lactic rot<br />
+																				Volatile acidity
+																			</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																			<td>
+																				Alpha amino nitrogen<br />
+																				Ammonia<br />
+																				Anthocyanins<br />
+																				Citric acid<br />
+																				Colour intensity<br />
+																				Extract<br />
+																				Folin C (Total polyphenol)<br />
+																				Fructose<br />
+																				Gluconic acid<br />
+																				Glucose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Potassium<br />
+																				Reducing sugar<br />
+																				Succinic acid<br />
+																				OD280<br />
+																				OD520
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab2">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Glucose+Fructose<br />
+																				Malic acid<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Total acidity<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Glucose+Fructose *<br />
+																				Malic acid *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Total acidity *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+																<div id="tab3">
+																	<table width="100%" border="0" cellspacing="5" cellpadding="0">
+																		<tr>
+																			<th>WineScan Flex</th>
+																			<th>WineScan Auto</th>
+																			<th>WineScan Grape</th>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Dry Finished Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				A420***<br />
+																				A520***<br />
+																				A620***<br />
+																				Citric<br />
+																				CO<sub>2</sub><br />
+																				Density<br />
+																				Ethanol<br />
+																				Ethyl acetate<br />
+																				Fructose<br />
+																				Gluconic<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Glycerol<br />
+																				Lactic acid<br />
+																				Malic acid<br />
+																				Methanol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sorbic acid<br />
+																				Tartaric acid<br />
+																				Total acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Citric *<br />
+																				CO<sub>2</sub> *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Ethyl acetate *<br />
+																				Fructose *<br />
+																				Gluconic *<br />
+																				Glucose *<br />
+																				Glucose+Fructose *<br />
+																				Glycerol *<br />
+																				Lactic acid *<br />
+																				Malic acid *<br />
+																				Methanol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sorbic acid *<br />
+																				Tartaric acid *<br />
+																				Total acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Sweet Finished Wine:</td>
+																		</tr>
+																		<tr style="background-color: #eee" valign="top">
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																			<td>
+																				Fructose<br />
+																				Glucose<br />
+																				Glucose+Fructose<br />
+																				Reducing sugar<br /><br />
+																				+ parameters from DFW
+																			</td>
+																		</tr>
+																		<tr>
+																			<td colspan="3" class="sub">Port Wine:</td>
+																		</tr>
+																		<tr valign="top">
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Density<br />
+																				Ethanol<br />
+																				Fixed acidity<br />
+																				Folin C (Total polyphenol)<br />
+																				Glycerol<br />
+																				pH<br />
+																				Reducing sugar<br />
+																				Sulphates<br />
+																				Total acidty<br />
+																				Volatile acidity
+																			</td>
+																			<td>
+																				Ash *<br />
+																				Density *<br />
+																				Ethanol *<br />
+																				Fixed acidity *<br />
+																				Folin C (Total polyphenol) *<br />
+																				Glycerol *<br />
+																				pH *<br />
+																				Reducing sugar *<br />
+																				Sulphates *<br />
+																				Total acidty *<br />
+																				Volatile acidity *
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+															
+														</td>
+														<td>
+															<a class="arrowBack" href="#">
+																<div class="arrowBackInner">
+																	Calculate savings
+																</div>
+															</a>
+															
+															<br />
+															
+															<a href="contact.html?book=1" class="bookDemo">
+																<div class="bookDemoInner">
+																	Book a demo now and get a free case story collection!
+																</div>
+															</a>
+															
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+				
+							</div>
+							
+							
+						</div>
+						<div class="botBotWrapper pngfix"></div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
